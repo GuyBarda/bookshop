@@ -1,0 +1,154 @@
+body.rtl {
+    direction: rtl;
+}
+
+body {
+    background-color: #90cd2e;
+    color: white;
+    /* overflow-x: hidden; */
+    padding: 0 40px;
+}
+
+button {
+    background-color: rgb(22, 22, 22);
+    color: whitesmoke;
+    border: 0;
+    border-radius: 0.4em;
+    padding: 6px 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: deeppink;
+}
+
+.books-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-list {
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100%;
+}
+
+td {
+    padding: 3px;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+}
+
+th {
+    border: 1px solid #c0c0c0;
+    font-size: 1.2rem;
+    padding: 3px;
+    color: fuchsia;
+}
+
+.book-preview {
+    background-color: white;
+    color: #0a3519;
+    width: 20%;
+    margin: 0.5em;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    text-align: center;
+    padding: 5px;
+}
+
+.book-preview .btn-remove {
+    float: right;
+}
+
+.book-preview img {
+    max-width: 100%;
+}
+
+.book-preview h5 {
+    font-size: 1.4em;
+    text-transform: capitalize;
+    /* text-decoration: overline; */
+}
+
+.book-preview h6 {
+    font-size: 1.3em;
+}
+
+.book-preview h6 span {
+    color: tomato;
+    font-size: 1.2em;
+}
+
+.book-filter {
+    background-color: #36a05b;
+    padding: 10px;
+    margin: 20px;
+}
+
+.book-filter hr {
+    margin: 30px;
+}
+
+.modal {
+    background-color: #111;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 30vw;
+    min-width: 200px;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal h3 {
+    color: pink;
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+
+.modal h4 span {
+    color: pink;
+}
+
+.modal > p {
+    text-align: left;
+}
+
+.rate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.user-msg {
+    position: fixed;
+    bottom: -100px;
+    right: 10px;
+    background-color: #111;
+    padding: 10px;
+}
+
+.user-msg.open {
+    bottom: 10px;
+    transition: bottom 0.5s;
+}
+
+.hidden {
+    display: none;
+}
